@@ -7,12 +7,19 @@
       <q-toolbar>
         <q-btn
           to="/camera"
+          class="q-mr-sm"
           flat
           color="primary"
           icon="eva-camera-outline"
           size="18px"
           dense
         />
+        <q-separator
+          vertical
+          inset
+          spaced
+        />
+
         <q-toolbar-title>
           Kaigram
         </q-toolbar-title>
@@ -71,9 +78,13 @@ export default {
 </script>
 
 <style lang="sass">
+.q-toolbar
+  @media (min-width: $breakpoint-sm-min)
+    height: 77px
 .q-toolbar__title
-  text-align: center
   font-size: 30px
+  @media (max-width: $breakpoint-xs-max)
+    text-align: center
 .q-footer
   .q-tab__icon
     font-size: 30px
