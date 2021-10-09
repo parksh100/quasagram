@@ -5,10 +5,25 @@
       bordered
     >
       <q-toolbar>
-
+        <q-btn
+          to="/camera"
+          flat
+          color="primary"
+          icon="eva-camera-outline"
+          size="18px"
+          dense
+        />
         <q-toolbar-title>
           Kaigram
         </q-toolbar-title>
+        <q-btn
+          to="/"
+          flat
+          color="primary"
+          icon="eva-home-outline"
+          size="18px"
+          dense
+        />
       </q-toolbar>
     </q-header>
 
